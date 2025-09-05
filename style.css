@@ -1,1 +1,12 @@
+@font-face {
+  font-family: 'Lazydog';
+  src: url("Lazydog.otf");
+}
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Lazydog';
+}
