@@ -1,20 +1,66 @@
 @font-face {
   font-family: "Lazydog";
-  src: url("Lazydog.otf") format("opentype"); /* Lazydog.otf sits in /assets */
+  src: url("Lazydog.otf") format("opentype");
   font-display: swap;
 }
 
-*,
-*::before,
-*::after { box-sizing: border-box; }
+* { 
+  box-sizing: border-box; 
+}
 
 body {
-  margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Lazydog"; }
 
+textarea {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  font: inherit;
+  max-width: 100%;
+  min-height: 200px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0 0.3rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 3rem 0;
+}
+
+table caption {
+  font-style: italic;
+}
+
+table th,
+table td {
+  padding: 0.8rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.color-secondary {
+  color: #B51926;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center,
 .title,
 .subtitle { text-align: center; }
 
@@ -22,9 +68,9 @@ h1, h2, h3, h4, h5, h6 { font-family: "Lazydog"; }
   background: #ffffff;
   border-radius: 14px;
   padding: 1rem;
-  margin: 1.5rem auto;       /* centers the card */
+  margin: 1.5rem auto;
   width: 75%;
-  max-width: 1100px;         /* optional: cap width on very wide screens */
+  max-width: 1100px; /* cap width on very wide screens */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
@@ -74,23 +120,9 @@ h1, h2, h3, h4, h5, h6 { font-family: "Lazydog"; }
 .accordion-body { padding: 0 1rem 1rem 1rem; }
 .accordion-body h3 { margin-top: 0.75rem; }
 
-textarea {
-  max-width: 100%;
-  min-height: 200px;
-  width: 100%;
-  font: inherit;
-  padding: 0.5rem;
-  border: 1px solid #bdbdbd;
-  border-radius: 8px;
-  background: #fff;
-}
-
-label {
-  display: block;
-  margin: 0.5rem 0 0.3rem;
-}
-
-/* Mobile */
+/*---------------*/
+/* Media Queries */
+/*---------------*/
 @media (max-width: 45rem) {
   .campaign { width: 92%; }    /* full-ish width on small screens */
   .accordion-summary { padding-right: 2.25rem; }
