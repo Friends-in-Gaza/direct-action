@@ -79,6 +79,14 @@ tbody tr:nth-child(odd) {
   letter-spacing: 0.5px;
 }
 
+.campaign section {
+  margin-bottom: 2rem;
+}
+
+.campaign section:last-child {
+  margin-bottom: initial;
+}
+
 .accordion {
   border: 1px solid #ffffff;
   border-radius: 12px;
